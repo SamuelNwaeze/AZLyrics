@@ -1,0 +1,324 @@
+$prycolor: #ddddee;
+$seccolor: #9999cc;
+$tercolor: #7777cc;
+$herocolor: #666699;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: verdana, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: $prycolor;
+  display: grid;
+  // justify-content: center;
+  // align-items: center;
+}
+
+nav {
+  display: flex;
+  padding: 10px 3px;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-content: center;
+  background-color: $seccolor;
+  text-align: center;
+  height: 51px;
+  img {
+    width: 38px;
+    // height: 20px;
+    vertical-align: middle;
+  }
+  li {
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 120px;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: 716;
+      margin: 0px 0.8px;
+      padding: 4px;
+      font-family: sans-serif;
+    }
+    a:hover {
+      background-color: $tercolor;
+    }
+  }
+  form {
+    display: flex;
+    border: none;
+    width: 240px;
+    height: 34px;
+    padding: 0px 15px;
+    input {
+      width: 281px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border: none;
+      padding: 6px 12px;
+    }
+    button {
+      background: none;
+      border: none;
+      background-color: $tercolor;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: white;
+      padding: 6px 12px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      small {
+        margin-left: 2px;
+      }
+    }
+  }
+}
+
+.hero {
+  padding: 3px;
+  height: 311px;
+  align-items: center;
+  text-align: center;
+  background-color: $herocolor;
+  text-align: center;
+}
+
+.container_mainpage {
+  margin: 0px 55px;
+  display: grid;
+  // align-items: center;
+  align-content: center;
+  padding: 7.5px 15px;
+  .welcome_ads {
+    display: flex;
+    align-content: center;
+    margin: 0px 15px;
+    text-align: center;
+    .welcome_text {
+      margin: 0px 0px 0px 195px;
+      padding: 0px 15px;
+      text-align: center;
+      .Bigtext {
+        font-size: 26px;
+      }
+      form {
+        display: flex;
+        height: 34px;
+        input {
+          width: 321px;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          border: none;
+          padding: 6px 12px;
+        }
+        button {
+          background: none;
+          border: none;
+          background-color: $tercolor;
+          display: flex;
+          align-items: center;
+          font-size: 10px;
+          color: white;
+          padding: 6px 12px;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+      }
+    }
+    .Ads {
+      width: 360px;
+      height: 250px;
+      margin: 0px 195px 0px 0px;
+      padding: 0px 15px;
+      // background-color: yellowgreen;
+    }
+    small {
+      color: #737373;
+      margin: 5px 0px 10px;
+      font-size: 12px;
+    }
+  }
+
+  .song_table {
+    // display: flex;
+    align-content: center;
+    margin: 0px 15px;
+    text-align: center;
+
+    p {
+      margin: 9px 0px 10px;
+      padding: 0px 15px;
+      text-align: center;
+      font-size: 26px;
+    }
+    .tables {
+      display: flex;
+      text-align: center;
+      margin: 0px 0px 0px 190px;
+      table {
+        width: 350px;
+        padding: 0px 15px;
+        justify-content: space-evenly;
+      }
+      td {
+        margin: 3px;
+        background-color: #eeeeff;
+        padding: 10px 15px;
+        text-align: center;
+        color: #00e;
+        td:hover {
+          background-color: white;
+        }
+      }
+      .AKA {
+        margin: 3px;
+        background-color: #eeeeff;
+        padding: 10px 5px;
+        text-align: center;
+        color: #00e;
+      }
+    }
+  }
+}
+
+.Adstwo {
+  height: 90px;
+  margin: 8px 0px;
+  // background-color: yellowgreen;
+}
+
+// Card Starts
+.grid {
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+  .gridHeader {
+    font-size: 26px;
+    text-align: center;
+    margin: 9px 0px 10px;
+  }
+  .gridItemsRowone {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    text-align: center;
+    // grid-template-columns: repeat(auto-fit);
+    .cards {
+      margin: 10px 0px;
+      padding: 0px 15px;
+      .card_img {
+        width: 160px;
+        height: 160px;
+      }
+      .cardContent {
+        p {
+          color: #00e;
+        }
+      }
+    }
+  }
+  .gridItemsRowtwo {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    text-align: center;
+    // grid-template-columns: repeat(auto-fit);
+    .cards {
+      margin: 10px 0px;
+      padding: 0px 15px;
+      .card_img {
+        width: 160px;
+        height: 160px;
+      }
+      .cardContent {
+        p {
+          color: #00e;
+        }
+      }
+    }
+  }
+  .gridItemsRowthree {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    text-align: center;
+    // grid-template-columns: repeat(auto-fit);
+    .cards {
+      margin: 10px 0px;
+      padding: 0px 15px;
+      .card_img {
+        width: 160px;
+        height: 160px;
+      }
+      .cardContent {
+        p {
+          color: #00e;
+        }
+      }
+    }
+  }
+  .gridItemsRowlast {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    text-align: center;
+    // grid-template-columns: repeat(auto-fit);
+    .cards {
+      margin: 10px 0px;
+      padding: 0px 15px;
+      .card_img {
+        width: 160px;
+        height: 160px;
+      }
+      .cardContent {
+        p {
+          color: #00e;
+        }
+      }
+    }
+  }
+}
+// Cards Ends
+
+// footer starts
+
+footer {
+  .lastFooter {
+    text-align: center;
+    font-size: 11px;
+    color: #333;
+  }
+}
+ul {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  justify-content: center;
+  li {
+    margin: 15px;
+    height: 20px;
+  }
+}
+
+.firstfooter {
+  background-color: $tercolor;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.secondfooter {
+  // background-color: $tercolor;
+  a {
+    color: #00e;
+    text-decoration: none;
+  }
+}
+// footer ends
